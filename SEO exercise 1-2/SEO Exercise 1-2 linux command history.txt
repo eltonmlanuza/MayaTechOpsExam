@@ -1,0 +1,219 @@
+1  free
+    2  echo $TOTAL_MEMORY
+    3  ls
+    4  vi /opt/scripts/memory_check.sh
+    5  cd /opt
+    6  ls
+    7  mkdir scripts
+    8  ls
+    9  vi /opt/scripts/memory_check.sh
+   10  memory_check.sh
+   11  /opt/scripts/memory_check.sh
+   12  chmod +x scripts
+   13  /opt/scripts/memory_check.sh
+   14  ls
+   15  /scripts/memory_check.sh
+   16  scripts/memory_check.sh
+   17  chmod u+x  scripts/memory_check.sh
+   18  scripts/memory_check.sh
+   19  free
+   20  TOTAL_MEMORY=$( free | grep Mem: | awk '{ print $2 }' )
+   21  echo $TOTAL_MEMORY
+   22  vi /opt/scripts/memory_check.sh
+   23  scripts/memory_check.sh
+   24  free | grep Mem: | awk '{ print $2 }'
+   25  free -m
+   26  awk '/^Mem/ {print $3}' <(free -m)
+   27  free | grep Mem: | awk '{ print $2 }'
+   28  free | grep Mem | awk '{ printf("free: %.4f %\n", $4/$2 * 100.0) }'
+   29  free | grep Mem: | awk '{ print $4 }'
+   30  vi /opt/scripts/memory_check.sh
+   31  scripts/memory_check.sh
+   32  /opts/scripts/memory_check.sh
+   33  ls
+   34  cd opt
+   35  cd /opt
+   36  ./memory_check.sh
+   37  ./scripts/memory_check.sh
+   38  ./scripts/memory_check.sh -s 10 -p something
+   39  ./scripts/memory_check.sh -s 10 -p "something"
+   40  ./scripts/memory_check.sh -s 10 -p something
+   41  ./scripts/memory_check.sh -s 45 -p something
+   42  ./scripts/memory_check.sh -p something -s 45
+   43  ./scripts/memory_check.sh -p something -s 46
+   44  ./scripts/memory_check.sh -p something -s 90
+   45  vi /opt/scripts/memory_check.sh
+   46  ./scripts/memory_check.sh -p something -s 90
+   47  ./scripts/memory_check.sh -w something -c 90
+   48  ./scripts/memory_check.sh -c 90 -w 60
+   49  vi /opt/scripts/memory_check.sh
+   50  ./scripts/memory_check.sh -c 90 -w 60
+   51  vi /opt/scripts/memory_check.sh
+   52  ./scripts/memory_check.sh -c sss -w 60
+   53  vi /opt/scripts/memory_check.sh
+   54  ./scripts/memory_check.sh -c sss -w 60
+   55  ./scripts/memory_check.sh -c 90 -w 60
+   56  vi /opt/scripts/memory_check.sh
+   57  ./scripts/memory_check.sh -c 90 -w 60
+   58  vi /opt/scripts/memory_check.sh
+   59  ./scripts/memory_check.sh -c 90 -w 60
+   60  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   61  ./scripts/memory_check.sh -c 90 -w 60 -e emai
+   62  vi /opt/scripts/memory_check.sh
+   63  ./scripts/memory_check.sh -c 90 -w 60 -e emai
+   64  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   65  vi /opt/scripts/memory_check.sh
+   66  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   67  vi /opt/scripts/memory_check.sh
+   68  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   69  vi /opt/scripts/memory_check.sh
+   70  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   71  free
+   72  vi /opt/scripts/memory_check.sh
+   73  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   74  vi /opt/scripts/memory_check.sh
+   75  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   76  vi /opt/scripts/memory_check.sh
+   77  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   78  vi /opt/scripts/memory_check.sh
+   79  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   80  vi /opt/scripts/memory_check.sh
+   81  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   82  vi /opt/scripts/memory_check.sh
+   83  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   84  vi /opt/scripts/memory_check.sh
+   85  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   86  vi /opt/scripts/memory_check.sh
+   87  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   88  vi /opt/scripts/memory_check.sh
+   89  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   90  vi /opt/scripts/memory_check.sh
+   91  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   92  vi /opt/scripts/memory_check.sh
+   93  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+   94  vi /opt/scripts/memory_check.sh
+   95  ./scripts/memory_check.sh -c 98 -w 60 -e email@mine.com
+   96  vi /opt/scripts/memory_check.sh
+   97  ./scripts/memory_check.sh -c 98 -w 60 -e email@mine.com
+   98  vi /opt/scripts/memory_check.sh
+   99  ./scripts/memory_check.sh -c 98 -w 60 -e email@mine.com
+  100  vi /opt/scripts/memory_check.sh
+  101  ./scripts/memory_check.sh -c 98 -w 60 -e email@mine.com
+  102  ./scripts/memory_check.sh -c 94 -w 60 -e email@mine.com
+  103  ./scripts/memory_check.sh -c 93 -w 60 -e email@mine.com
+  104  ./scripts/memory_check.sh -c 99 -w 60 -e email@mine.com
+  105  ./scripts/memory_check.sh -c 99.333 -w 60 -e email@mine.com
+  106  ./scripts/memory_check.sh -c 96.333 -w 60 -e email@mine.com
+  107  ./scripts/memory_check.sh -c 66.333 -w 60 -e email@mine.com
+  108  ./scripts/memory_check.sh -c 97.333 -w 60 -e email@mine.com
+  109  vi /opt/scripts/memory_check.sh
+  110  exit
+  111  vi /opt/scripts/memory_check.sh
+  112  ./scripts/memory_check.sh -c 90 -w 91 -e email@mine.com
+  113  cd opt
+  114  cd /opt
+  115  ./scripts/memory_check.sh -c 90 -w 91 -e email@mine.com
+  116  vi /opt/scripts/memory_check.sh
+  117  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+  118  vi /opt/scripts/memory_check.sh
+  119  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+  120  vi /opt/scripts/memory_check.sh
+  121  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+  122  vi /opt/scripts/memory_check.sh
+  123  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+  124  vi /opt/scripts/memory_check.sh
+  125  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+  126  ./scripts/memory_check.sh -c 90 -w 91 -e email@mine.com
+  127  ./scripts/memory_check.sh -c 95 -w 90 -e email@mine.com
+  128  ./scripts/memory_check.sh -c 82 -w 80 -e email@mine.com
+  129  vi /opt/scripts/memory_check.sh
+  130  ./scripts/memory_check.sh -c 82 -w 80 -e email@mine.com
+  131  vi /opt/scripts/memory_check.sh
+  132  ./scripts/memory_check.sh -c 87 -w 80 -e email@mine.com
+  133  vi /opt/scripts/memory_check.sh
+  134  ./scripts/memory_check.sh -c 87 -w 80 -e email@mine.com
+  135  vi /opt/scripts/memory_check.sh
+  136  ./scripts/memory_check.sh -c 87 -w 80 -e email@mine.com
+  137  ./scripts/memory_check.sh -c 88 -w 80 -e email@mine.com
+  138  vi /opt/scripts/memory_check.sh
+  139  ./scripts/memory_check.sh -c 88 -w 80 -e email@mine.com
+  140  vi /opt/scripts/memory_check.sh
+  141  ./scripts/memory_check.sh -c 88 -w 80 -e email@mine.com
+  142  ./scripts/memory_check.sh -c 87 -w 80 -e email@mine.com
+  143  vi /opt/scripts/memory_check.sh
+  144  ./scripts/memory_check.sh -c 87 -w 80 -e email@mine.com
+  145  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+  146  vi /opt/scripts/memory_check.sh
+  147  ps -eo pmem,pcpu,vsize,pid,cmd | sort -k 1 -nr | head -5
+  148  # ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+  149  ps aux | sort -rnk 4 | head -5
+  150  ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+  151  top
+  152  ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+  153  ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -10
+  154  ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -4
+  155  ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -11
+  156  vi /opt/scripts/memory_check.sh
+  157  ./scripts/memory_check.sh -c 90 -w 60 -e email@mine.com
+  158  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  159  vi /opt/scripts/memory_check.sh
+  160  exit
+  161  vi /opt/scripts/memory_check.sh
+  162  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  163  cd /opt
+  164  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  165  vi /opt/scripts/memory_check.sh
+  166  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  167  vi /opt/scripts/memory_check.sh
+  168  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  169  vi /opt/scripts/memory_check.sh
+  170  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  171  vi /opt/scripts/memory_check.sh
+  172  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  173  vi /opt/scripts/memory_check.sh
+  174  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  175  vi /opt/scripts/memory_check.sh
+  176  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  177  vi /opt/scripts/memory_check.sh
+  178  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  179  vi /opt/scripts/memory_check.sh
+  180  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  181  vi /opt/scripts/memory_check.sh
+  182  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  183  vi /opt/scripts/memory_check.sh
+  184  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  185  vi /opt/scripts/memory_check.sh
+  186  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  187  vi /opt/scripts/memory_check.sh
+  188  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  189  vi /opt/scripts/memory_check.sh
+  190  ./scripts/memory_check.sh -c 87 -w 60 -e email@mine.com
+  191  vi /opt/scripts/memory_check.sh
+  192  sudo apt install ssmtp
+  193  sendmail
+  194  vi /opt/scripts/memory_check.sh
+  195  ./scripts/memory_check.sh -c 87 -w 60 -e eltonmlanuza@gmail.com
+  196  vi /opt/scripts/memory_check.sh
+  197  ./scripts/memory_check.sh -c 87 -w 60 -e eltonmlanuza@gmail.com
+  198  vi /opt/scripts/memory_check.sh
+  199  ./scripts/memory_check.sh -c 87 -w 60 -e eltonmlanuza@gmail.com
+  200  vi /opt/scripts/memory_check.sh
+  201  ./scripts/memory_check.sh -c 87 -w 60 -e eltonmlanuza@gmail.com
+  202  vi /opt/scripts/memory_check.sh
+  203  ./scripts/memory_check.sh -c 87 -w 60 -e eltonmlanuza@gmail.com
+  204  vi /opt/scripts/memory_check.sh
+  205  ./scripts/memory_check.sh -c 87 -w 60 -e eltonmlanuza@gmail.com
+  206  vi /opt/scripts/memory_check.sh
+  207  cd
+  208  cd /tmp
+  209  ls
+  210  cd
+  211  cd /opt
+  212  vi /opt/scripts/memory_check.sh
+  213  cd /opt
+  214  ./scripts/memory_check.sh -c 87 -w 60 -e eltonmlanuza@gmail.com
+  215  vi /opt/scripts/memory_check.sh
+  216  ./scripts/memory_check.sh -c 87 -w 60 -e eltonmlanuza@gmail.com
+  217  ./scripts/memory_check.sh -c 90 -w 60 -e eltonmlanuza@gmail.com
+  218  vi /opt/scripts/memory_check.sh
+  219  history
