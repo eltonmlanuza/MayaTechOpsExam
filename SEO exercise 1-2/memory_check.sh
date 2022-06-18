@@ -26,16 +26,20 @@ if [ -z "${c}" ] || [ -z "${w}" ] || [ -z "${e}" ]; then
     usage
 fi
 
-echo "c = ${c}"
-echo "w = ${w}"
-echo "e = ${e}"
+# echo "c = ${c}"
+# echo "w = ${w}"
+# echo "e = ${e}"
 
 TOTAL_MEMORY=$( free | grep Mem: | awk '{ print $2 }' )
-echo $TOTAL_MEMORY
+echo "Total Memory: $TOTAL_MEMORY"
 USED_MEMORY=$( free | grep Mem: | awk '{ print $3 }' )
-echo $USED_MEMORY
+echo "Used Memory: $USED_MEMORY"
 PER_MEMORY=$( free | grep Mem: | awk '{ print ($3/$2)*100 }' )
-echo $PER_MEMORY
+echo "Memory Usage; $PER_MEMORY %"
+DATE_SUBJ=$(date '+%Y%m%d %H:%M')
+SUBJECT="$DATE_SUBJ memory check - critical"
+MESSAGE="/tmp/Mail.out"
+TO=${e}
 
 if (($c > $w)); then
         if (($(echo "$w > $PER_MEMORY" |bc -l))); then
@@ -47,7 +51,12 @@ if (($c > $w)); then
                 exit 1
         else
                 echo "Used memory is greater than or equal to threshold"
-                ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -11
+                echo "$(ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -11)"
+                echo "Used memory is greater than or equal to threshold" >> $MESSAGE
+                echo "$(ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -11)" >> $MESSAGE
+				mail -s "$SUBJECT" "$TO" < $MESSAGE
+                echo "email sent"
+                rm /tmp/Mail.out
                 exit 2
         fi
 
