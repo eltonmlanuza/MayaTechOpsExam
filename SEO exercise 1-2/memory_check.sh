@@ -39,14 +39,16 @@ echo $PER_MEMORY
 
 if (($c > $w)); then
         if (($(echo "$w > $PER_MEMORY" |bc -l))); then
-                echo "0, used memory is less than warning threshold"
+                echo "Used memory is less than warning threshold"
+                exit 0
 
         elif (($(echo "$w <= $PER_MEMORY" |bc -l) && $(echo "$c > $PER_MEMORY" |bc -l))); then
-                echo "1, used memory greater than or equal to warning but less than the critical threshold"
-
+                echo "Used memory greater than or equal to warning but less than the critical threshold"
+                exit 1
         else
-                echo "2, used memory is greater than or equal to threshold"
-                echo "top 10 processes"
+                echo "Used memory is greater than or equal to threshold"
+                ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -11
+                exit 2
         fi
 
 else
